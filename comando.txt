@@ -1,0 +1,3 @@
+ansible wordpress -u vagrant --private-key .vagrant/machines/wordpress/virtualbox/private-key -i hosts -m shell -a 'echo Hello, World'
+
+ansible-playbook /vagrant/ansible/provisioning.yml -i /vagrant/ansible/hosts --private-key /vagrant/ssh-key/ansible
